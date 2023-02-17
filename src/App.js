@@ -1,4 +1,7 @@
 import React, {useState, useRef, useEffect} from "react";
+import sun from './images/icon-sun.svg';
+import edit from './images/icon-edit.svg';
+import add from './images/icon-add.svg';
 
 import TodoList from './TodoList';
 
@@ -86,7 +89,7 @@ const App = () => {
                 <h1 className="title">TODO</h1>
                 
                 <div className="theme">
-                    <img src= "../public/images/icon-sun.svg" alt="dark-mode" id="theme-changer" />
+                    <img src= {sun} alt="dark-mode" id="theme-changer" />
                 </div>
 
                 <form action="#" className="form">
@@ -95,10 +98,10 @@ const App = () => {
                     <div className="add-new">
                         {toggleEdit 
                         ? <button onClick = {handleAdd} className = 'edit-btn btn'>
-                            <img src="/images/icon-edit.svg" alt="edit-icon" />
+                            <img src={edit} alt="edit-icon" />
                             </button> 
                         : <button onClick = {handleAdd} className = 'add-btn btn'>
-                            <img src="/images/icon-add.svg" alt="add-icon"></img>
+                            <img src={add} alt="add-icon"></img>
                             </button>}
                     </div>
                 </form>
