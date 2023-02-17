@@ -125,6 +125,7 @@ const App = () => {
                             <p onClick={displayComp} className = {`comp-nav ${page}`}>Completed</p>
                         </div>
                     </div>
+                    
                     <div onClick = {handleClear}>
                         <p>Clear Completed</p>
                     </div>
