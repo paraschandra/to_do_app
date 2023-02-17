@@ -1,4 +1,5 @@
 import React, {useState, useRef, useEffect} from "react";
+import sun from '../public/images/icon-sun.svg';
 
 import TodoList from './TodoList';
 
@@ -86,7 +87,7 @@ const App = () => {
                 <h1 className="title">TODO</h1>
                 
                 <div className="theme">
-                    <img src="public/images/icon-sun.svg" alt="dark-mode" id="theme-changer" />
+                    <img src= {sun} alt="dark-mode" id="theme-changer" />
                 </div>
 
                 <form action="#" className="form">
