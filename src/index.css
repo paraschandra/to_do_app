@@ -173,8 +173,8 @@
   }
 
   .checkbox:checked::after {
-    background: no-repeat url(/public/images/icon-check.svg) center/60%, -webkit-gradient(linear, left top, left bottom, from(#57ddff), to(#c058f3));
-    background: no-repeat url(/public/images/icon-check.svg) center/60%, linear-gradient(to bottom, #57ddff, #c058f3);
+    background: no-repeat url(./images/icon-check.svg) center/60%, -webkit-gradient(linear, left top, left bottom, from(#57ddff), to(#c058f3));
+    background: no-repeat url(./images/icon-check.svg) center/60%, linear-gradient(to bottom, #57ddff, #c058f3);
   }
 
 .todo-text{
