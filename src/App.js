@@ -82,16 +82,13 @@ const App = () => {
 
     return (
         <div className="container">
-            <div className="header">
-            </div>
-
-            <div className="main">
-                <div className="head-part">
-                    <h1>TODO</h1>
-                    <div className="theme">
-                        <img src="/images/icon-sun.svg" alt="dark-mode" id="theme-changer" />
-                    </div>
+            <header className="header">
+                <h1 className="title">TODO</h1>
+                
+                <div className="theme">
+                    <img src="/images/icon-sun.svg" alt="dark-mode" id="theme-changer" />
                 </div>
+
                 <form action="#" className="form">
                     <input className = 'checkbox inpchk' type = "checkbox"/>
                     <input ref = {todoNameRef} type="text" placeholder="Create a new todo..."/>
@@ -105,7 +102,9 @@ const App = () => {
                             </button>}
                     </div>
                 </form>
+            </header>
 
+            <div className="main">
                 <div className="list-wrapper">
                     <div className="todo-list">
                         <TodoList todos = {Todos} 
@@ -117,9 +116,7 @@ const App = () => {
                 </div>
 
                 <div className="actions">
-                    <div className="items-left">
-                        <span>{Todos.filter(todo => !todo.complete).length} items left</span>
-                    </div>
+                    <span className="items-left">{Todos.filter(todo => !todo.complete).length} items left</span>
 
                     <div className="nav">
                         <div>
