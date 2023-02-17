@@ -9,7 +9,7 @@
     --shadow : hsl(237,14%,25%);
     --hover : hsl(236,33%,92%);
     --blue : hsl(220,98%,61%);
-    --bg-desktop : url('../public/images/bg-desktop-dark.jpg');
+    --bg-desktop : url('./images/bg-desktop-dark.jpg');
 }
 
 *{
