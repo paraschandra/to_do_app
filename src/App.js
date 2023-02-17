@@ -86,7 +86,7 @@ const App = () => {
                 <h1 className="title">TODO</h1>
                 
                 <div className="theme">
-                    <img src="/images/icon-sun.svg" alt="dark-mode" id="theme-changer" />
+                    <img src="public/images/icon-sun.svg" alt="dark-mode" id="theme-changer" />
                 </div>
 
                 <form action="#" className="form">
